@@ -1,17 +1,31 @@
+import { useState } from 'react'
 import { AiOutlineBell, AiOutlineMessage, AiOutlineSearch } from 'react-icons/ai'
+import { FaBars } from 'react-icons/fa'
 import img1 from '../src/images/avatar-g139528dac_640.png'
 import Sidebar from './components/Sidebar'
 
 const Layout = ({ children }) => {
+  const [sidebar, setSidebar] = useState(false)
+  const openSidebar = () => {
+    setSidebar(true)
+  }
+
+  const closeSidebar = () => {
+    setSidebar(false)
+  }
   return (
     <>
-      <div className='flex relative w-full min-h-screen'>
-        <Sidebar />
-        <div className='flex flex-col bg-slate-50 ml-60 py-4 sm:py-6 lg:py-8 w-full'>
+      <div className='flex relative w-full'>
+        <Sidebar sidebar={sidebar} />
+        <div className={sidebar ? 'inset-0 w-full bg-slate-500/70 min-h-screen absolute z-40' : 'hidden'} onClick={closeSidebar}></div>
+        <div className='flex flex-col bg-slate-50 ml-0 md:ml-52 lg:ml-60 py-4'>
 
           {/* Topbar */}
-          <div className="flex items-center justify-between px-4 md:px-6">
-            <div className='bg-white rounded py-2 px-4 items-center space-x-3 shadow-sm flex basis-2/3'>
+          <div className="flex items-center justify-between px-4 md:px-6 py-4">
+            <button type='button' className='block md:hidden' onClick={openSidebar}>
+              <FaBars className='text-sky-800' />
+            </button>
+            <div className='bg-white rounded py-2 px-4 items-center space-x-3 shadow-sm hidden md:flex basis-2/3'>
               <input type="text" className='bg-white outline-none w-full' placeholder='Search' />
               <AiOutlineSearch className='font-semibold' />
             </div>
