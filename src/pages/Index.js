@@ -1,5 +1,5 @@
 import Card from '../components/Card'
-import Layout from '../Layout'
+import Layout from '../Layout2'
 
 const Index = () => {
   return (

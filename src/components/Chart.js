@@ -31,7 +31,7 @@ export const Chart1 = () => {
   }
   return (
     <>
-        <div className='bg-white h-fit p-4 rounded-lg flex flex-col space-y-6 drop-shadow-md'>
+        <div className='bg-white p-4 rounded-lg flex flex-col space-y-6 drop-shadow-md w-full'>
           <p className='text-lg font-medium text-purple-900 px-4'>Visitor</p>
           <Bar data={data} options={options} />
         </div>
@@ -64,7 +64,7 @@ export const Chart3 = () => {
   }
   return (
     <>
-      <div className='bg-white p-4 rounded-lg flex flex-col space-y-6 drop-shadow-md'>
+      <div className='bg-white p-4 rounded-lg flex flex-col space-y-6 drop-shadow-md h-fit w-full'>
         <p className='text-lg font-medium text-purple-900 px-4'>Visitor</p>
         <Doughnut data={data} options={options} />
       </div>

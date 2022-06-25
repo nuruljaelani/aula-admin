@@ -8,17 +8,17 @@ import { FaAngleDown } from 'react-icons/fa'
 import aula from '../../src/assets/aula.svg'
 
 const Sidebar = ({ sidebar }) => {
-  const activeClass = 'flex items-center space-x-2 md:space-x-4 px-4 md:px-6 py-2 hover:bg-slate-100 border-l-4 border-l-rose-500 text-rose-500'
-  const notactive = 'flex items-center space-x-2 md:space-x-4 px-4 md:px-6 py-2 hover:bg-slate-100'
+  const activeClass = 'flex items-center space-x-2 md:space-x-4 px-6 md:px-10 py-2 hover:bg-slate-100 border-l-4 border-l-rose-500 text-rose-500'
+  const notactive = 'flex items-center space-x-2 md:space-x-4 px-6 md:px-10 py-2 hover:bg-slate-100'
   return (
     <>
-      <div className={sidebar ? 'bg-white h-full w-fit fixed z-50 left-0 top-0 flex' : 'bg-white h-full w-fit fixed z-50 left-0 top-0 hidden md:flex'}>
+      <div className={sidebar ? 'bg-white h-full fixed z-50 left-0 top-0 flex' : 'bg-white h-full fixed z-50 left-0 top-0 hidden lg:flex'}>
         <div className='flex flex-col py-2 md:py-4 lg:py-6 space-y-4 md:space-y-6'>
           <div className='flex items-center justify-center'>
             <img src={aula} alt='' className='h-8 md:h-12 lg:h-14 w-auto' />
           </div>
           <div className='flex flex-col space-y-4 w-full'>
-            <p className='uppercase text-slate-400 text-sm px-4 md:px-6'>Menu</p>
+            <p className='uppercase text-slate-400 text-sm px-6 md:px-10'>Menu</p>
             <NavLink to='/' className={({ isActive }) => isActive ? activeClass : notactive}>
               <AiOutlineDashboard className='font-medium' />
               <p className='font-medium text-sm md:text-base'>Dashboard</p>
@@ -53,7 +53,7 @@ const Sidebar = ({ sidebar }) => {
               </Menu.Items>
             </Menu>
             <Menu>
-              <Menu.Button as='div' className='flex items-center space-x-2 md:space-x-4 px-4 md:px-6 py-2 hover:bg-slate-50'>
+              <Menu.Button as='div' className='flex items-center space-x-2 md:space-x-4 px-6 md:px-10 py-2 hover:bg-slate-50'>
                 <AiOutlineFileDone />
                 <p className='text-sm md:text-base'>Form</p>
                 <FaAngleDown />
@@ -70,7 +70,7 @@ const Sidebar = ({ sidebar }) => {
                 </Menu.Item>
               </Menu.Items>
             </Menu>
-            <p className='uppercase text-slate-400 text-sm px-4 md:px-6'>Page</p>
+            <p className='uppercase text-slate-400 text-sm px-6 md:px-10'>Page</p>
             <Menu>
               <Menu.Button as='div' className={location.pathname.includes('/auth/') ? activeClass : notactive}>
                 <AiOutlineLogin />

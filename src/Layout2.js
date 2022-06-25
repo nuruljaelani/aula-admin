@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
       <div className='flex relative w-full'>
         <Sidebar sidebar={sidebar} />
         <div className={sidebar ? 'inset-0 w-full bg-slate-500/70 min-h-screen absolute z-40' : 'hidden'} onClick={closeSidebar}></div>
-        <div className='flex flex-col w-4/5 bg-slate-50 py-4'>
+        <div className='flex flex-col w-full bg-slate-50 py-4 pl-0 lg:pl-[15.8rem]'>
 
           {/* Topbar */}
           <div className="flex space-x-2 lg:space-x-0 items-center justify-between px-4 md:px-6 py-4">
