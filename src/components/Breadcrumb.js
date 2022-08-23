@@ -1,4 +1,4 @@
-import Layout from '../Layout'
+import Layout from '../Layout2'
 import { AiFillDashboard, AiOutlineFile, AiFillDatabase } from 'react-icons/ai'
 
 const Breadcrumb = () => {

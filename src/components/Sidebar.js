@@ -50,6 +50,11 @@ const Sidebar = ({ sidebar }) => {
                     <p className='text-sm md:text-base'>Button</p>
                   </Menu.Item>
                 </NavLink>
+                <NavLink to='/components/card'>
+                  <Menu.Item as="div">
+                    <p className='text-sm md:text-base'>Card</p>
+                  </Menu.Item>
+                </NavLink>
               </Menu.Items>
             </Menu>
             <Menu>

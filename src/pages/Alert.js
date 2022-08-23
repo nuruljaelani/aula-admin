@@ -30,7 +30,7 @@ const Alert = () => {
                     This is danger alert.
                   </div>
                   <div className='text-white bg-sky-400 rounded p-2 md:p-4 text-sm'>
-                    This is secondary alert.
+                    This is info alert.
                   </div>
                   <div className='text-white bg-gray-800 rounded p-2 md:p-4 text-sm'>
                     This is dark alert.

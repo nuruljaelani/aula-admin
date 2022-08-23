@@ -6,13 +6,12 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "standard",
-        "plugin:react/jsx-runtime"
+        "plugin:react/jsx-runtime",
+        "standard"
+    ],
+    "overrides": [
     ],
     "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
@@ -20,6 +19,6 @@
         "react"
     ],
     "rules": {
-        "react/prop-types": "off"
+        "react/prop-types": 0
     }
 }

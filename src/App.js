@@ -5,6 +5,7 @@ import Index from './pages/Index'
 import Badge from './pages/Badge'
 import Breadcrumb from './components/Breadcrumb'
 import Button from './pages/Button'
+import Card from './pages/Card'
 
 function App () {
   return (
@@ -15,6 +16,7 @@ function App () {
         <Route path='/components/badge' element={<Badge />} />
         <Route path='/components/breadcrumb' element={<Breadcrumb />} />
         <Route path='/components/button' element={<Button />} />
+        <Route path='/components/card' element={<Card />} />
       </Routes>
     </Router>
   )
