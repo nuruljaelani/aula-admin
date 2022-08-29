@@ -8,19 +8,19 @@ const Button = () => {
       <Layout>
         <div className="flex flex-col px-4 md:px-6 my-4 md:my-6 space-y-4 md:space-y-6 w-full">
           <div className="flex flex-col">
-            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-teal-800 font-bold">
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-teal-800 dark:text-teal-300 font-bold">
               Button
             </p>
-            <p className="text-sm md:text-base text-sky-800">
+            <p className="text-sm md:text-base text-sky-800 dark:text-sky-300">
               Custom button styles for actions in forms, dialogs, and more with
               support for multiple sizes, states, and more.
             </p>
           </div>
-          <div className="flex flex-col bg-white basis-1/2 p-4 rounded-lg drop-shadow-sm space-y-4">
-            <p className="text-teal-800 font-bold text-lg">Basic Button</p>
+          <div className="flex flex-col bg-white dark:bg-slate-900 basis-1/2 p-4 rounded-lg drop-shadow-sm space-y-4">
+            <p className="text-teal-800 dark:text-teal-300 font-bold text-lg">Basic Button</p>
             <div className="flex flex-col space-y-4">
               <div className="flex flex-col space-y-2">
-                <p className="font-medum text-lg">Default</p>
+                <p className="font-medum dark:text-gray-300">Default</p>
                 <div className="flex gap-2">
                   <button
                     type="button"
@@ -69,7 +69,7 @@ const Button = () => {
 
               <hr />
               <div className="flex flex-col space-y-2">
-                <p className="font-medum text-lg">Rounded</p>
+                <p className="font-medum dark:text-gray-300">Rounded</p>
                 <div className="flex gap-2">
                   <button
                     type="button"
@@ -118,8 +118,8 @@ const Button = () => {
             </div>
           </div>
 
-          <div className="flex flex-col bg-white basis-1/2 p-4 rounded-lg drop-shadow-sm space-y-4">
-            <p className="text-teal-800 font-bold text-lg">Button Outline</p>
+          <div className="flex flex-col bg-white dark:bg-slate-900 basis-1/2 p-4 rounded-lg drop-shadow-sm space-y-4">
+            <p className="text-teal-800 dark:text-teal-300 font-bold text-lg">Button Outline</p>
             <div className="flex flex-col space-y-4">
               <div className="flex flex-col space-y-2">
                 <div className="flex gap-2">
@@ -170,8 +170,8 @@ const Button = () => {
             </div>
           </div>
 
-          <div className="flex flex-col bg-white basis-1/2 p-4 rounded-lg drop-shadow-sm space-y-4">
-            <p className="text-teal-800 font-bold text-lg">Icon</p>
+          <div className="flex flex-col bg-white dark:bg-slate-900 basis-1/2 p-4 rounded-lg drop-shadow-sm space-y-4">
+            <p className="text-teal-800 dark:text-teal-300 font-bold text-lg">Icon</p>
             <div className="flex flex-col space-y-4">
               <div className="flex flex-col space-y-2">
                 <div className="flex gap-2">

@@ -7,33 +7,33 @@ const Card = () => {
       <Layout>
         <div className="flex flex-col px-4 md:px-6 my-4 md:my-6 space-y-4 md:space-y-6 w-full">
           <div className="flex flex-col">
-            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-teal-800 font-bold">
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-teal-800 dark:text-teal-300 font-bold">
               Card
             </p>
-            <p className="text-sm md:text-base text-sky-800">
+            <p className="text-sm md:text-base text-sky-800 dark:text-sky-300">
               Bootstrap’s cards provide a flexible and extensible content
               container with multiple variants and options.
             </p>
           </div>
           <div className="flex flex-col gap-6">
             <div className="flex flex-row gap-6 w-full h-fit">
-              <div className="flex flex-col bg-white rounded-lg shadow-md gap-2 h-fit w-1/2">
-                <p className="font-medium text-gray-600 p-4">Card Title</p>
+              <div className="flex flex-col bg-white dark:bg-slate-900 rounded-lg shadow-md gap-2 h-fit w-1/2">
+                <p className="font-medium text-gray-600 dark:text-gray-200 p-4">Card Title</p>
                 <hr />
-                <div className="text-gray-500 leading-5 p-4">
+                <div className="text-gray-500 dark:text-gray-300 leading-5 p-4">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Quasi debitis, quo ratione earum porro recusandae adipisci vel
                   dolorum quas dolorem.
                 </div>
                 <hr />
-                <div className="font-medium text-gray-600 p-4">Footer Card</div>
+                <div className="font-medium text-gray-600 dark:text-gray-300 p-4">Footer Card</div>
               </div>
-              <div className="flex flex-col bg-white rounded-lg shadow-md gap-2 h-fit w-1/2">
-                <p className="font-medium text-gray-600 p-4">
+              <div className="flex flex-col bg-white dark:bg-slate-900 rounded-lg shadow-md gap-2 h-fit w-1/2">
+                <p className="font-medium text-gray-600 dark:text-gray-200 p-4">
                   Card Action Button
                 </p>
                 <hr />
-                <div className="text-gray-500 leading-5 p-4">
+                <div className="text-gray-500 dark:text-gray-300 leading-5 p-4">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Quasi debitis, quo ratione earum porro recusandae adipisci vel
                   dolorum quas dolorem.
@@ -50,36 +50,36 @@ const Card = () => {
               </div>
             </div>
             <div className="flex gap-6">
-              <div className="flex flex-col bg-white rounded-lg shadow-md gap-2 h-fit w-1/2">
+              <div className="flex flex-col bg-white dark:bg-slate-900 rounded-lg shadow-md gap-2 h-fit w-1/2">
                 <img src={image1} className="p-2" />
                 <hr />
-                <div className="text-gray-500 leading-5 p-4">
+                <div className="text-gray-500 dark:text-gray-300 leading-5 p-4">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Quasi debitis, quo ratione earum porro recusandae adipisci vel
                   dolorum quas dolorem.
                 </div>
               </div>
-              <div className="flex flex-col bg-white rounded-lg shadow-md gap-2 h-fit w-1/2">
-                <p className="font-medium text-gray-600 p-4">
+              <div className="flex flex-col bg-white dark:bg-slate-900 rounded-lg shadow-md gap-2 h-fit w-1/2">
+                <p className="font-medium text-gray-600 dark:text-gray-200 p-4">
                   Card Form
                 </p>
                 <hr />
-                <div className="text-gray-500 leading-5 p-4 flex-col space-y-2">
+                <div className="text-gray-500 dark:text-gray-300 leading-5 p-4 flex-col space-y-2">
                   <div className='flex flex-col'>
                     <label className='text-sm'>First Name</label>
-                    <input type='text' className='bg-white rounded-md text-sm p-2 focus:outline-none border' />
+                    <input type='text' className='bg-white dark:bg-slate-800 rounded-md text-sm p-2 focus:outline-none border dark:border-slate-800' />
                   </div>
                   <div className='flex flex-col'>
                     <label className='text-sm'>Last Name</label>
-                    <input type='text' className='bg-white rounded-md text-sm p-2 focus:outline-none border' />
+                    <input type='text' className='bg-white dark:bg-slate-800 rounded-md text-sm p-2 focus:outline-none border dark:border-slate-800' />
                   </div>
                   <div className='flex flex-col'>
                     <label className='text-sm'>Email</label>
-                    <input type='text' className='bg-white rounded-md text-sm p-2 focus:outline-none border' />
+                    <input type='text' className='bg-white dark:bg-slate-800 rounded-md text-sm p-2 focus:outline-none border dark:border-slate-800' />
                   </div>
                   <div className='flex flex-col'>
                     <label className='text-sm'>Address</label>
-                    <textarea className='bg-white rounded-md text-sm p-2 focus:outline-none border'></textarea>
+                    <textarea className='bg-white dark:bg-slate-800 rounded-md text-sm p-2 focus:outline-none border dark:border-slate-800'></textarea>
                   </div>
                 </div>
                 <hr />
