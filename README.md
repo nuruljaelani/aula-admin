@@ -12,12 +12,12 @@ Clone repositori ini dengan perintah
 git clone https://github.com/nuruljaelani/aula-admin.git
 ```
 
-Setelah selesai clone, buka direktori repositori yang telah di clone tadi dan jalankan perintah berikut ini untuk menginstall depedensi/package yang dibutuhkan
+Install devedensi
 ```
 npm install
 ```
 
-Lalu jalankan perintah ini untuk menjalankan aplikasi
+Jalankan server
 ```
 npm start
 ```
